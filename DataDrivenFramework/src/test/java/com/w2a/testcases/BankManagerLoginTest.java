@@ -4,7 +4,6 @@ import java.io.IOException;
 
 import org.openqa.selenium.By;
 import org.testng.Assert;
-import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 import com.w2a.base.TestBase;
@@ -16,8 +15,8 @@ public class BankManagerLoginTest extends TestBase {
 	public void bankManagerLoginTest() throws InterruptedException, IOException{
 		
 		
-		verifyEquals("abc", "xyz");
-		Thread.sleep(3000);
+		//verifyEquals("abc", "xyz");
+		//Thread.sleep(3000);
 		log.debug("Inside Login Test");
 		click("bmlBtn_CSS");
 

@@ -1,377 +1,127 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="19.277" tests="8" errors="0" skipped="7" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="38.205" tests="6" errors="0" skipped="1" failures="5">
   <properties>
-    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\bin"/>
-    <property name="java.vm.version" value="25.201-b09"/>
-    <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Users\tyudm\git\DataDrivenFramework\DataDrivenFramework"/>
-    <property name="java.vendor.url" value="http://java.oracle.com/"/>
-    <property name="path.separator" value=";"/>
-    <property name="guice.disable.misplaced.annotation.check" value="true"/>
-    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
     <property name="file.encoding.pkg" value="sun.io"/>
-    <property name="user.script" value=""/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\tyudm\git\DataDrivenFramework\DataDrivenFramework\target\test-classes;C:\Users\tyudm\git\DataDrivenFramework\DataDrivenFramework\target\classes;C:\Users\tyudm\.m2\repository\org\testng\testng\6.11\testng-6.11.jar;C:\Users\tyudm\.m2\repository\com\beust\jcommander\1.64\jcommander-1.64.jar;C:\Users\tyudm\.m2\repository\org\yaml\snakeyaml\1.17\snakeyaml-1.17.jar;C:\Users\tyudm\.m2\repository\org\seleniumhq\selenium\selenium-java\2.53.1\selenium-java-2.53.1.jar;C:\Users\tyudm\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\2.53.1\selenium-chrome-driver-2.53.1.jar;C:\Users\tyudm\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\2.53.1\selenium-remote-driver-2.53.1.jar;C:\Users\tyudm\.m2\repository\cglib\cglib-nodep\2.1_3\cglib-nodep-2.1_3.jar;C:\Users\tyudm\.m2\repository\com\google\code\gson\gson\2.3.1\gson-2.3.1.jar;C:\Users\tyudm\.m2\repository\org\seleniumhq\selenium\selenium-api\2.53.1\selenium-api-2.53.1.jar;C:\Users\tyudm\.m2\repository\org\apache\httpcomponents\httpclient\4.5.1\httpclient-4.5.1.jar;C:\Users\tyudm\.m2\repository\org\apache\httpcomponents\httpcore\4.4.3\httpcore-4.4.3.jar;C:\Users\tyudm\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\2.53.1\selenium-edge-driver-2.53.1.jar;C:\Users\tyudm\.m2\repository\commons-io\commons-io\2.4\commons-io-2.4.jar;C:\Users\tyudm\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\tyudm\.m2\repository\org\seleniumhq\selenium\htmlunit-driver\2.21\htmlunit-driver-2.21.jar;C:\Users\tyudm\.m2\repository\net\sourceforge\htmlunit\htmlunit\2.21\htmlunit-2.21.jar;C:\Users\tyudm\.m2\repository\xalan\xalan\2.7.2\xalan-2.7.2.jar;C:\Users\tyudm\.m2\repository\xalan\serializer\2.7.2\serializer-2.7.2.jar;C:\Users\tyudm\.m2\repository\org\apache\commons\commons-lang3\3.4\commons-lang3-3.4.jar;C:\Users\tyudm\.m2\repository\org\apache\httpcomponents\httpmime\4.5.2\httpmime-4.5.2.jar;C:\Users\tyudm\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\tyudm\.m2\repository\net\sourceforge\htmlunit\htmlunit-core-js\2.17\htmlunit-core-js-2.17.jar;C:\Users\tyudm\.m2\repository\net\sourceforge\htmlunit\neko-htmlunit\2.21\neko-htmlunit-2.21.jar;C:\Users\tyudm\.m2\repository\xerces\xercesImpl\2.11.0\xercesImpl-2.11.0.jar;C:\Users\tyudm\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar;C:\Users\tyudm\.m2\repository\net\sourceforge\cssparser\cssparser\0.9.18\cssparser-0.9.18.jar;C:\Users\tyudm\.m2\repository\org\w3c\css\sac\1.3\sac-1.3.jar;C:\Users\tyudm\.m2\repository\org\eclipse\jetty\websocket\websocket-client\9.2.15.v20160210\websocket-client-9.2.15.v20160210.jar;C:\Users\tyudm\.m2\repository\org\eclipse\jetty\jetty-util\9.2.15.v20160210\jetty-util-9.2.15.v20160210.jar;C:\Users\tyudm\.m2\repository\org\eclipse\jetty\jetty-io\9.2.15.v20160210\jetty-io-9.2.15.v20160210.jar;C:\Users\tyudm\.m2\repository\org\eclipse\jetty\websocket\websocket-common\9.2.15.v20160210\websocket-common-9.2.15.v20160210.jar;C:\Users\tyudm\.m2\repository\org\eclipse\jetty\websocket\websocket-api\9.2.15.v20160210\websocket-api-9.2.15.v20160210.jar;C:\Users\tyudm\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\tyudm\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\2.53.1\selenium-firefox-driver-2.53.1.jar;C:\Users\tyudm\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\2.53.1\selenium-ie-driver-2.53.1.jar;C:\Users\tyudm\.m2\repository\net\java\dev\jna\jna\4.1.0\jna-4.1.0.jar;C:\Users\tyudm\.m2\repository\net\java\dev\jna\jna-platform\4.1.0\jna-platform-4.1.0.jar;C:\Users\tyudm\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\2.53.1\selenium-safari-driver-2.53.1.jar;C:\Users\tyudm\.m2\repository\io\netty\netty\3.5.7.Final\netty-3.5.7.Final.jar;C:\Users\tyudm\.m2\repository\org\seleniumhq\selenium\selenium-support\2.53.1\selenium-support-2.53.1.jar;C:\Users\tyudm\.m2\repository\org\seleniumhq\selenium\selenium-leg-rc\2.53.1\selenium-leg-rc-2.53.1.jar;C:\Users\tyudm\.m2\repository\com\relevantcodes\extentreports\2.41.2\extentreports-2.41.2.jar;C:\Users\tyudm\.m2\repository\org\jsoup\jsoup\1.8.3\jsoup-1.8.3.jar;C:\Users\tyudm\.m2\repository\org\xerial\sqlite-jdbc\3.8.11.1\sqlite-jdbc-3.8.11.1.jar;C:\Users\tyudm\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\tyudm\.m2\repository\org\mongodb\mongodb-driver\3.0.4\mongodb-driver-3.0.4.jar;C:\Users\tyudm\.m2\repository\org\mongodb\bson\3.0.4\bson-3.0.4.jar;C:\Users\tyudm\.m2\repository\org\mongodb\mongodb-driver-core\3.0.4\mongodb-driver-core-3.0.4.jar;C:\Users\tyudm\.m2\repository\org\uncommons\reportng\1.1.4\reportng-1.1.4.jar;C:\Users\tyudm\.m2\repository\velocity\velocity\1.4\velocity-1.4.jar;C:\Users\tyudm\.m2\repository\velocity\velocity-dep\1.4\velocity-dep-1.4.jar;C:\Users\tyudm\.m2\repository\com\google\inject\guice\4.1.0\guice-4.1.0.jar;C:\Users\tyudm\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\tyudm\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\tyudm\.m2\repository\com\google\guava\guava\19.0\guava-19.0.jar;C:\Users\tyudm\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\tyudm\.m2\repository\javax\mail\mail\1.4.7\mail-1.4.7.jar;C:\Users\tyudm\.m2\repository\mysql\mysql-connector-java\6.0.5\mysql-connector-java-6.0.5.jar;C:\Users\tyudm\.m2\repository\org\apache\poi\poi\3.6\poi-3.6.jar;C:\Users\tyudm\.m2\repository\commons-logging\commons-logging\1.1\commons-logging-1.1.jar;C:\Users\tyudm\.m2\repository\logkit\logkit\1.0.1\logkit-1.0.1.jar;C:\Users\tyudm\.m2\repository\avalon-framework\avalon-framework\4.1.3\avalon-framework-4.1.3.jar;C:\Users\tyudm\.m2\repository\javax\servlet\servlet-api\2.3\servlet-api-2.3.jar;C:\Users\tyudm\.m2\repository\org\apache\poi\poi-ooxml\3.6\poi-ooxml-3.6.jar;C:\Users\tyudm\.m2\repository\dom4j\dom4j\1.1\dom4j-1.1.jar;C:\Users\tyudm\.m2\repository\org\apache\xmlbeans\xmlbeans\2.3.0\xmlbeans-2.3.0.jar;C:\Users\tyudm\.m2\repository\stax\stax-api\1.0.1\stax-api-1.0.1.jar;C:\Users\tyudm\.m2\repository\org\apache\poi\poi-ooxml-schemas\3.6\poi-ooxml-schemas-3.6.jar;C:\Users\tyudm\.m2\repository\org\apache\geronimo\specs\geronimo-stax-api_1.0_spec\1.0\geronimo-stax-api_1.0_spec-1.0.jar;C:\Users\tyudm\.m2\repository\org\apache\maven\surefire\surefire-testng-utils\2.20.1\surefire-testng-utils-2.20.1.jar;C:\Users\tyudm\.m2\repository\org\apache\maven\surefire\surefire-grouper\2.20.1\surefire-grouper-2.20.1.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 7"/>
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="sun.os.patch.level" value="Service Pack 1"/>
-    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\tyudm\git\DataDrivenFramework\DataDrivenFramework"/>
-    <property name="java.runtime.version" value="1.8.0_201-b09"/>
-    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_201\jre\lib\endorsed"/>
-    <property name="os.arch" value="amd64"/>
-    <property name="java.io.tmpdir" value="C:\Users\tyudm\AppData\Local\Temp\"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\tyudm\AppData\Local\Temp\surefire1048883775413562837\surefirebooter9116386292676594453.jar C:\Users\tyudm\AppData\Local\Temp\surefire1048883775413562837 2019-05-13T16-09-02_057-jvmRun1 surefire5325432609541868187tmp surefire_02404165943946163994tmp"/>
+    <property name="surefire.test.class.path" value="C:\Users\tyudm\git\DataDrivenFramework\DataDrivenFramework\target\test-classes;C:\Users\tyudm\git\DataDrivenFramework\DataDrivenFramework\target\classes;C:\Users\tyudm\.m2\repository\org\testng\testng\6.11\testng-6.11.jar;C:\Users\tyudm\.m2\repository\com\beust\jcommander\1.64\jcommander-1.64.jar;C:\Users\tyudm\.m2\repository\org\yaml\snakeyaml\1.17\snakeyaml-1.17.jar;C:\Users\tyudm\.m2\repository\org\seleniumhq\selenium\selenium-java\2.53.1\selenium-java-2.53.1.jar;C:\Users\tyudm\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\2.53.1\selenium-chrome-driver-2.53.1.jar;C:\Users\tyudm\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\2.53.1\selenium-remote-driver-2.53.1.jar;C:\Users\tyudm\.m2\repository\cglib\cglib-nodep\2.1_3\cglib-nodep-2.1_3.jar;C:\Users\tyudm\.m2\repository\com\google\code\gson\gson\2.3.1\gson-2.3.1.jar;C:\Users\tyudm\.m2\repository\org\seleniumhq\selenium\selenium-api\2.53.1\selenium-api-2.53.1.jar;C:\Users\tyudm\.m2\repository\org\apache\httpcomponents\httpclient\4.5.1\httpclient-4.5.1.jar;C:\Users\tyudm\.m2\repository\org\apache\httpcomponents\httpcore\4.4.3\httpcore-4.4.3.jar;C:\Users\tyudm\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\2.53.1\selenium-edge-driver-2.53.1.jar;C:\Users\tyudm\.m2\repository\commons-io\commons-io\2.4\commons-io-2.4.jar;C:\Users\tyudm\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\tyudm\.m2\repository\org\seleniumhq\selenium\htmlunit-driver\2.21\htmlunit-driver-2.21.jar;C:\Users\tyudm\.m2\repository\net\sourceforge\htmlunit\htmlunit\2.21\htmlunit-2.21.jar;C:\Users\tyudm\.m2\repository\xalan\xalan\2.7.2\xalan-2.7.2.jar;C:\Users\tyudm\.m2\repository\xalan\serializer\2.7.2\serializer-2.7.2.jar;C:\Users\tyudm\.m2\repository\org\apache\commons\commons-lang3\3.4\commons-lang3-3.4.jar;C:\Users\tyudm\.m2\repository\org\apache\httpcomponents\httpmime\4.5.2\httpmime-4.5.2.jar;C:\Users\tyudm\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\tyudm\.m2\repository\net\sourceforge\htmlunit\htmlunit-core-js\2.17\htmlunit-core-js-2.17.jar;C:\Users\tyudm\.m2\repository\net\sourceforge\htmlunit\neko-htmlunit\2.21\neko-htmlunit-2.21.jar;C:\Users\tyudm\.m2\repository\xerces\xercesImpl\2.11.0\xercesImpl-2.11.0.jar;C:\Users\tyudm\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar;C:\Users\tyudm\.m2\repository\net\sourceforge\cssparser\cssparser\0.9.18\cssparser-0.9.18.jar;C:\Users\tyudm\.m2\repository\org\w3c\css\sac\1.3\sac-1.3.jar;C:\Users\tyudm\.m2\repository\org\eclipse\jetty\websocket\websocket-client\9.2.15.v20160210\websocket-client-9.2.15.v20160210.jar;C:\Users\tyudm\.m2\repository\org\eclipse\jetty\jetty-util\9.2.15.v20160210\jetty-util-9.2.15.v20160210.jar;C:\Users\tyudm\.m2\repository\org\eclipse\jetty\jetty-io\9.2.15.v20160210\jetty-io-9.2.15.v20160210.jar;C:\Users\tyudm\.m2\repository\org\eclipse\jetty\websocket\websocket-common\9.2.15.v20160210\websocket-common-9.2.15.v20160210.jar;C:\Users\tyudm\.m2\repository\org\eclipse\jetty\websocket\websocket-api\9.2.15.v20160210\websocket-api-9.2.15.v20160210.jar;C:\Users\tyudm\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\tyudm\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\2.53.1\selenium-firefox-driver-2.53.1.jar;C:\Users\tyudm\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\2.53.1\selenium-ie-driver-2.53.1.jar;C:\Users\tyudm\.m2\repository\net\java\dev\jna\jna\4.1.0\jna-4.1.0.jar;C:\Users\tyudm\.m2\repository\net\java\dev\jna\jna-platform\4.1.0\jna-platform-4.1.0.jar;C:\Users\tyudm\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\2.53.1\selenium-safari-driver-2.53.1.jar;C:\Users\tyudm\.m2\repository\io\netty\netty\3.5.7.Final\netty-3.5.7.Final.jar;C:\Users\tyudm\.m2\repository\org\seleniumhq\selenium\selenium-support\2.53.1\selenium-support-2.53.1.jar;C:\Users\tyudm\.m2\repository\org\seleniumhq\selenium\selenium-leg-rc\2.53.1\selenium-leg-rc-2.53.1.jar;C:\Users\tyudm\.m2\repository\com\relevantcodes\extentreports\2.41.2\extentreports-2.41.2.jar;C:\Users\tyudm\.m2\repository\org\jsoup\jsoup\1.8.3\jsoup-1.8.3.jar;C:\Users\tyudm\.m2\repository\org\xerial\sqlite-jdbc\3.8.11.1\sqlite-jdbc-3.8.11.1.jar;C:\Users\tyudm\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\tyudm\.m2\repository\org\mongodb\mongodb-driver\3.0.4\mongodb-driver-3.0.4.jar;C:\Users\tyudm\.m2\repository\org\mongodb\bson\3.0.4\bson-3.0.4.jar;C:\Users\tyudm\.m2\repository\org\mongodb\mongodb-driver-core\3.0.4\mongodb-driver-core-3.0.4.jar;C:\Users\tyudm\.m2\repository\org\uncommons\reportng\1.1.4\reportng-1.1.4.jar;C:\Users\tyudm\.m2\repository\velocity\velocity\1.4\velocity-1.4.jar;C:\Users\tyudm\.m2\repository\velocity\velocity-dep\1.4\velocity-dep-1.4.jar;C:\Users\tyudm\.m2\repository\com\google\inject\guice\4.1.0\guice-4.1.0.jar;C:\Users\tyudm\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\tyudm\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\tyudm\.m2\repository\com\google\guava\guava\19.0\guava-19.0.jar;C:\Users\tyudm\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\tyudm\.m2\repository\javax\mail\mail\1.4.7\mail-1.4.7.jar;C:\Users\tyudm\.m2\repository\mysql\mysql-connector-java\6.0.5\mysql-connector-java-6.0.5.jar;C:\Users\tyudm\.m2\repository\org\apache\poi\poi\3.6\poi-3.6.jar;C:\Users\tyudm\.m2\repository\commons-logging\commons-logging\1.1\commons-logging-1.1.jar;C:\Users\tyudm\.m2\repository\logkit\logkit\1.0.1\logkit-1.0.1.jar;C:\Users\tyudm\.m2\repository\avalon-framework\avalon-framework\4.1.3\avalon-framework-4.1.3.jar;C:\Users\tyudm\.m2\repository\javax\servlet\servlet-api\2.3\servlet-api-2.3.jar;C:\Users\tyudm\.m2\repository\org\apache\poi\poi-ooxml\3.6\poi-ooxml-3.6.jar;C:\Users\tyudm\.m2\repository\dom4j\dom4j\1.1\dom4j-1.1.jar;C:\Users\tyudm\.m2\repository\org\apache\xmlbeans\xmlbeans\2.3.0\xmlbeans-2.3.0.jar;C:\Users\tyudm\.m2\repository\stax\stax-api\1.0.1\stax-api-1.0.1.jar;C:\Users\tyudm\.m2\repository\org\apache\poi\poi-ooxml-schemas\3.6\poi-ooxml-schemas-3.6.jar;C:\Users\tyudm\.m2\repository\org\apache\geronimo\specs\geronimo-stax-api_1.0_spec\1.0\geronimo-stax-api_1.0_spec-1.0.jar;C:\Users\tyudm\.m2\repository\org\apache\maven\surefire\surefire-testng-utils\2.20.1\surefire-testng-utils-2.20.1.jar;C:\Users\tyudm\.m2\repository\org\apache\maven\surefire\surefire-grouper\2.20.1\surefire-grouper-2.20.1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\tyudm"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_201\jre"/>
+    <property name="basedir" value="C:\Users\tyudm\git\DataDrivenFramework\DataDrivenFramework"/>
+    <property name="file.separator" value="\"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="user.variant" value=""/>
-    <property name="os.name" value="Windows 7"/>
-    <property name="classworlds.conf" value="C:\Users\tyudm\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf7349309678062205193.tmp"/>
-    <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_201\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_201/bin/server;C:/Program Files/Java/jre1.8.0_201/bin;C:/Program Files/Java/jre1.8.0_201/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn;C:\Selenium\Chrome;C:\Selenium\IE;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Wget\GnuWin32\bin;C:\Program Files\Maven\bin;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;D:\Selenium downloads\apache-ant-1.9.7\bin\;C:\Program Files (x86)\PICT\;C:\Program Files (x86)\Skype\Phone;C:\ProgramFiles\Java\jdk1.8.0_201\bin;D:\browsersDrivers\;C:\Program Files\Maven\bin;%TOMCAT_HOME\bin%;C:\Program Files (x86)\Git\cmd;%JAVA_HOME_1%\bin;C:\Program Files\Java\jdk1.8.0_201\bin\;C:\Users\tyudm\Desktop;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="java.class.version" value="52.0"/>
-    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="6.1"/>
-    <property name="user.home" value="C:\Users\tyudm"/>
-    <property name="user.timezone" value="Europe/Helsinki"/>
-    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
-    <property name="java.specification.version" value="1.8"/>
-    <property name="file.encoding" value="Cp1252"/>
-    <property name="user.name" value="tyudm"/>
-    <property name="java.class.path" value="C:\Users\tyudm\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_1.10.0.20181127-2120\jars\plexus-classworlds-2.5.2.jar"/>
-    <property name="java.vm.specification.version" value="1.8"/>
-    <property name="sun.arch.data.model" value="64"/>
-    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_201\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B test"/>
-    <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="user.language" value="en"/>
-    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
-    <property name="java.vm.info" value="mixed mode"/>
-    <property name="java.version" value="1.8.0_201"/>
-    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_201\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\tyudm\AppData\Local\Temp\surefire1048883775413562837\surefirebooter9116386292676594453.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_201\jre\classes"/>
-    <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="C:\Users\tyudm\git\DataDrivenFramework\DataDrivenFramework\EMBEDDED"/>
-    <property name="file.separator" value="\"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_201-b09"/>
+    <property name="user.name" value="tyudm"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="6.1"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_201\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\tyudm\.m2\repository"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
-    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.io.tmpdir" value="C:\Users\tyudm\AppData\Local\Temp\"/>
+    <property name="java.version" value="1.8.0_201"/>
+    <property name="user.dir" value="C:\Users\tyudm\git\DataDrivenFramework\DataDrivenFramework"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_201/bin/server;C:/Program Files/Java/jre1.8.0_201/bin;C:/Program Files/Java/jre1.8.0_201/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn;C:\Selenium\Chrome;C:\Selenium\IE;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Wget\GnuWin32\bin;C:\Program Files\Maven\bin;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;D:\Selenium downloads\apache-ant-1.9.7\bin\;C:\Program Files (x86)\PICT\;C:\Program Files (x86)\Skype\Phone;C:\ProgramFiles\Java\jdk1.8.0_201\bin;D:\browsersDrivers\;C:\Program Files\Maven\bin;%TOMCAT_HOME\bin%;C:\Program Files (x86)\Git\cmd;%JAVA_HOME_1%\bin;C:\Program Files\Java\jdk1.8.0_201\bin\;C:\Users\tyudm\Desktop;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.201-b09"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_201\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
-    <property name="sun.desktop" value="windows"/>
-    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="setUp" classname="com.w2a.testcases.OpenAccountTest" time="19.277">
-    <failure message="unknown error: cannot get automation extension&#10;from chrome not reachable&#10;  (Session info: chrome=73.0.3683.103)&#10;  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 11.87 seconds&#10;Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;&#10;System info: host: &apos;TYUDM&apos;, ip: &apos;192.168.1.27&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_201&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\tyudm\AppData\Local\Temp\scoped_dir18252_12626}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=73.0.3683.103, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]&#10;Session ID: bbc8a734847e64b98d8c6335e531b716" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: unknown error: cannot get automation extension
-from chrome not reachable
+  <testcase name="addCustomerTest" classname="com.w2a.testcases.AddCustomerTest" time="10.294">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;button[ng-click=&apos;addCust()&apos;]&quot;}&#10;  (Session info: chrome=73.0.3683.103)&#10;  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 10.27 seconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;&#10;System info: host: &apos;TYUDM&apos;, ip: &apos;192.168.1.27&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_201&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Users\tyudm\AppData\Local\Temp\scoped_dir16228_10107}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=73.0.3683.103, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]&#10;Session ID: 5d3ad3a66f509e7823646cab2a2187b6&#10;*** Element info: {Using=css selector, value=button[ng-click=&apos;addCust()&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"button[ng-click='addCust()']"}
   (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 11.87 seconds
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.27 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
 System info: host: 'TYUDM', ip: '192.168.1.27', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_201'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\tyudm\AppData\Local\Temp\scoped_dir18252_12626}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=73.0.3683.103, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
-Session ID: bbc8a734847e64b98d8c6335e531b716
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:945)
-	at com.w2a.base.TestBase.setUp(TestBase.java:124)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:326)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Users\tyudm\AppData\Local\Temp\scoped_dir16228_10107}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=73.0.3683.103, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 5d3ad3a66f509e7823646cab2a2187b6
+*** Element info: {Using=css selector, value=button[ng-click='addCust()']}
+	at com.w2a.testcases.AddCustomerTest.addCustomerTest(AddCustomerTest.java:26)
 </failure>
-    <system-err><![CDATA[log4j:ERROR setFile(null,false) call failed.
-java.io.FileNotFoundException: F:\seleniumworkspaces\LiveProjects\DataDrivenFramework\src\test\resources\logs\selenium.log (The system cannot find the path specified)
-	at java.io.FileOutputStream.open0(Native Method)
-	at java.io.FileOutputStream.open(FileOutputStream.java:270)
-	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
-	at java.io.FileOutputStream.<init>(FileOutputStream.java:133)
-	at org.apache.log4j.FileAppender.setFile(FileAppender.java:294)
-	at org.apache.log4j.RollingFileAppender.setFile(RollingFileAppender.java:207)
-	at org.apache.log4j.FileAppender.activateOptions(FileAppender.java:165)
-	at org.apache.log4j.config.PropertySetter.activate(PropertySetter.java:307)
-	at org.apache.log4j.config.PropertySetter.setProperties(PropertySetter.java:172)
-	at org.apache.log4j.config.PropertySetter.setProperties(PropertySetter.java:104)
-	at org.apache.log4j.PropertyConfigurator.parseAppender(PropertyConfigurator.java:842)
-	at org.apache.log4j.PropertyConfigurator.parseCategory(PropertyConfigurator.java:768)
-	at org.apache.log4j.PropertyConfigurator.configureRootCategory(PropertyConfigurator.java:648)
-	at org.apache.log4j.PropertyConfigurator.doConfigure(PropertyConfigurator.java:514)
-	at org.apache.log4j.PropertyConfigurator.doConfigure(PropertyConfigurator.java:580)
-	at org.apache.log4j.helpers.OptionConverter.selectAndConfigure(OptionConverter.java:526)
-	at org.apache.log4j.LogManager.<clinit>(LogManager.java:127)
-	at org.apache.log4j.Logger.getLogger(Logger.java:104)
-	at com.w2a.base.TestBase.<clinit>(TestBase.java:44)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at java.lang.Class.newInstance(Class.java:442)
-	at org.testng.internal.ClassHelper.newInstance(ClassHelper.java:65)
-	at org.testng.TestNG.addListeners(TestNG.java:1012)
-	at org.testng.TestNG.initializeConfiguration(TestNG.java:976)
-	at org.testng.TestNG.run(TestNG.java:1102)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-log4j:ERROR setFile(null,false) call failed.
-java.io.FileNotFoundException: F:\seleniumworkspaces\LiveProjects\DataDrivenFramework\src\test\resources\logs\application.log (The system cannot find the path specified)
-	at java.io.FileOutputStream.open0(Native Method)
-	at java.io.FileOutputStream.open(FileOutputStream.java:270)
-	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
-	at java.io.FileOutputStream.<init>(FileOutputStream.java:133)
-	at org.apache.log4j.FileAppender.setFile(FileAppender.java:294)
-	at org.apache.log4j.RollingFileAppender.setFile(RollingFileAppender.java:207)
-	at org.apache.log4j.FileAppender.activateOptions(FileAppender.java:165)
-	at org.apache.log4j.config.PropertySetter.activate(PropertySetter.java:307)
-	at org.apache.log4j.config.PropertySetter.setProperties(PropertySetter.java:172)
-	at org.apache.log4j.config.PropertySetter.setProperties(PropertySetter.java:104)
-	at org.apache.log4j.PropertyConfigurator.parseAppender(PropertyConfigurator.java:842)
-	at org.apache.log4j.PropertyConfigurator.parseCategory(PropertyConfigurator.java:768)
-	at org.apache.log4j.PropertyConfigurator.parseCatsAndRenderers(PropertyConfigurator.java:672)
-	at org.apache.log4j.PropertyConfigurator.doConfigure(PropertyConfigurator.java:516)
-	at org.apache.log4j.PropertyConfigurator.doConfigure(PropertyConfigurator.java:580)
-	at org.apache.log4j.helpers.OptionConverter.selectAndConfigure(OptionConverter.java:526)
-	at org.apache.log4j.LogManager.<clinit>(LogManager.java:127)
-	at org.apache.log4j.Logger.getLogger(Logger.java:104)
-	at com.w2a.base.TestBase.<clinit>(TestBase.java:44)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at java.lang.Class.newInstance(Class.java:442)
-	at org.testng.internal.ClassHelper.newInstance(ClassHelper.java:65)
-	at org.testng.TestNG.addListeners(TestNG.java:1012)
-	at org.testng.TestNG.initializeConfiguration(TestNG.java:976)
-	at org.testng.TestNG.run(TestNG.java:1102)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-Starting ChromeDriver 2.29.461591 (62ebf098771772160f391d75e589dc567915b233) on port 4825
+    <system-err><![CDATA[Starting ChromeDriver 2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab) on port 31181
 Only local connections are allowed.
 ]]></system-err>
   </testcase>
-  <testcase name="bankManagerLoginTest" classname="com.w2a.testcases.BankManagerLoginTest" time="0">
-    <skipped/>
-  </testcase>
   <testcase name="addCustomerTest" classname="com.w2a.testcases.AddCustomerTest" time="0">
-    <skipped/>
-    <system-err><![CDATA[java.lang.NullPointerException
-	at com.w2a.listeners.CustomListeners.onTestSkipped(CustomListeners.java:69)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1723)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1714)
-	at org.testng.internal.Invoker.registerSkippedTestResult(Invoker.java:1272)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:605)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-]]></system-err>
+    <skipped message="Skipping the test case as the Run mode for data set is NO"/>
   </testcase>
-  <testcase name="addCustomerTest" classname="com.w2a.testcases.AddCustomerTest" time="0">
-    <skipped/>
-    <system-err><![CDATA[java.lang.NullPointerException
-	at com.w2a.listeners.CustomListeners.onTestSkipped(CustomListeners.java:69)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1723)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1714)
-	at org.testng.internal.Invoker.registerSkippedTestResult(Invoker.java:1272)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:605)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-]]></system-err>
+  <testcase name="addCustomerTest" classname="com.w2a.testcases.AddCustomerTest" time="10.064">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;button[ng-click=&apos;addCust()&apos;]&quot;}&#10;  (Session info: chrome=73.0.3683.103)&#10;  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 10.06 seconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;&#10;System info: host: &apos;TYUDM&apos;, ip: &apos;192.168.1.27&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_201&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Users\tyudm\AppData\Local\Temp\scoped_dir16228_10107}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=73.0.3683.103, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]&#10;Session ID: 5d3ad3a66f509e7823646cab2a2187b6&#10;*** Element info: {Using=css selector, value=button[ng-click=&apos;addCust()&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"button[ng-click='addCust()']"}
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'TYUDM', ip: '192.168.1.27', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Users\tyudm\AppData\Local\Temp\scoped_dir16228_10107}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=73.0.3683.103, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 5d3ad3a66f509e7823646cab2a2187b6
+*** Element info: {Using=css selector, value=button[ng-click='addCust()']}
+	at com.w2a.testcases.AddCustomerTest.addCustomerTest(AddCustomerTest.java:26)
+</failure>
   </testcase>
-  <testcase name="addCustomerTest" classname="com.w2a.testcases.AddCustomerTest" time="0">
-    <skipped/>
-    <system-err><![CDATA[java.lang.NullPointerException
-	at com.w2a.listeners.CustomListeners.onTestSkipped(CustomListeners.java:69)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1723)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1714)
-	at org.testng.internal.Invoker.registerSkippedTestResult(Invoker.java:1272)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:605)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-]]></system-err>
+  <testcase name="addCustomerTest" classname="com.w2a.testcases.AddCustomerTest" time="10.096">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;button[ng-click=&apos;addCust()&apos;]&quot;}&#10;  (Session info: chrome=73.0.3683.103)&#10;  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 10.08 seconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;&#10;System info: host: &apos;TYUDM&apos;, ip: &apos;192.168.1.27&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_201&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Users\tyudm\AppData\Local\Temp\scoped_dir16228_10107}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=73.0.3683.103, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]&#10;Session ID: 5d3ad3a66f509e7823646cab2a2187b6&#10;*** Element info: {Using=css selector, value=button[ng-click=&apos;addCust()&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"button[ng-click='addCust()']"}
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.08 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'TYUDM', ip: '192.168.1.27', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Users\tyudm\AppData\Local\Temp\scoped_dir16228_10107}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=73.0.3683.103, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 5d3ad3a66f509e7823646cab2a2187b6
+*** Element info: {Using=css selector, value=button[ng-click='addCust()']}
+	at com.w2a.testcases.AddCustomerTest.addCustomerTest(AddCustomerTest.java:26)
+</failure>
   </testcase>
-  <testcase name="addCustomerTest" classname="com.w2a.testcases.AddCustomerTest" time="0">
-    <skipped/>
-    <system-err><![CDATA[java.lang.NullPointerException
-	at com.w2a.listeners.CustomListeners.onTestSkipped(CustomListeners.java:69)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1723)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1714)
-	at org.testng.internal.Invoker.registerSkippedTestResult(Invoker.java:1272)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:605)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-]]></system-err>
+  <testcase name="bankManagerLoginTest" classname="com.w2a.testcases.BankManagerLoginTest" time="0.082">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.w2a.testcases.BankManagerLoginTest.bankManagerLoginTest(BankManagerLoginTest.java:21)
+</failure>
   </testcase>
-  <testcase name="openAccountTest" classname="com.w2a.testcases.OpenAccountTest" time="0">
-    <skipped/>
-    <system-err><![CDATA[java.lang.NullPointerException
-	at com.w2a.listeners.CustomListeners.onTestSkipped(CustomListeners.java:69)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1723)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1714)
-	at org.testng.internal.Invoker.registerSkippedTestResult(Invoker.java:1272)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:605)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-]]></system-err>
-  </testcase>
-  <testcase name="tearDown" classname="com.w2a.testcases.OpenAccountTest" time="0">
-    <skipped/>
-    <system-err><![CDATA[java.lang.NullPointerException
-	at com.w2a.listeners.CustomListeners.onTestSkipped(CustomListeners.java:69)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1723)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1714)
-	at org.testng.internal.Invoker.registerSkippedTestResult(Invoker.java:1272)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:605)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-]]></system-err>
+  <testcase name="openAccountTest" classname="com.w2a.testcases.OpenAccountTest" time="0.371">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.w2a.testcases.OpenAccountTest.openAccountTest(OpenAccountTest.java:25)
+</failure>
   </testcase>
 </testsuite>

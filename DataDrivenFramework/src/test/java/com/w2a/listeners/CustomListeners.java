@@ -13,7 +13,6 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 import org.testng.Reporter;
-import org.testng.SkipException;
 
 import com.relevantcodes.extentreports.LogStatus;
 import com.w2a.base.TestBase;
