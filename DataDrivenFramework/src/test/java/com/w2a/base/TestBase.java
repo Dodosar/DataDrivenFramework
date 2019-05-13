@@ -12,6 +12,7 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.ui.Select;
@@ -109,8 +110,16 @@ public class TestBase {
 
 				System.setProperty("webdriver.chrome.driver",
 						System.getProperty("user.dir") + "\\src\\test\\resources\\executables\\chromedriver.exe");
-				driver = new ChromeDriver();
-				log.debug("Chrome Launched !!!");
+				ChromeOptions chrome = new ChromeOptions();
+				chrome.addArguments("disable-infobars");
+				chrome.addArguments("--start-maximized");
+				chrome.addArguments("--disable-notifications");
+				chrome.addArguments("--disable-extenstions");
+				driver = new ChromeDriver(chrome);
+				log.debug("Chrome Opened!!!");
+				driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
+				driver.manage().timeouts().pageLoadTimeout(100, TimeUnit.SECONDS);
+				driver.manage().timeouts().setScriptTimeout(100, TimeUnit.SECONDS);
 			} else if (config.getProperty("browser").equals("ie")) {
 
 				System.setProperty("webdriver.ie.driver",
@@ -118,6 +127,7 @@ public class TestBase {
 				driver = new InternetExplorerDriver();
 
 			}
+			
 
 			driver.get(config.getProperty("testsiteurl"));
 			log.debug("Navigated to : " + config.getProperty("testsiteurl"));
