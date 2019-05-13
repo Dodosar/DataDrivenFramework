@@ -13,7 +13,19 @@
 		<classes>
 			<class name="com.w2a.testcases.BankManagerLoginTest" />
 		</classes>
-	</test> 
+	</test> <!-- Test -->
+	
+	<test name="Add Customer Test">
+		<classes>
+			<class name="com.w2a.testcases.AddCustomerTest" />
+		</classes>
+	</test> <!-- Test -->
+	
+	<test name="Open Account Test">
+		<classes>
+			<class name="com.w2a.testcases.OpenAccountTest" />
+		</classes>
+	</test><!-- Test -->
 	
 	
 </suite> <!-- Suite -->
