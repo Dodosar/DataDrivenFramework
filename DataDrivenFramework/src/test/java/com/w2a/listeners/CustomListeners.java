@@ -13,6 +13,7 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 import org.testng.Reporter;
+import org.testng.SkipException;
 
 import com.relevantcodes.extentreports.LogStatus;
 import com.w2a.base.TestBase;
@@ -75,6 +76,7 @@ public class CustomListeners extends TestBase implements ITestListener,ISuiteLis
 	public void onTestStart(ITestResult arg0) {
 
 		test = rep.startTest(arg0.getName().toUpperCase());
+		
 	
 	}
 
